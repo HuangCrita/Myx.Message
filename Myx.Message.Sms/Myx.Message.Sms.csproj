@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.CAP" Version="2.6.0" />
+    <PackageReference Include="DotNetCore.CAP.InMemoryStorage" Version="2.6.0" />
+    <PackageReference Include="DotNetCore.CAP.Kafka" Version="2.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Myx.Message.ALiYun\Myx.Message.ALiYun.csproj" />
+    <ProjectReference Include="..\Myx.Message.Cap\Myx.Message.Cap.csproj" />
+    <ProjectReference Include="..\Myx.Message.Core\Myx.Message.Core.csproj" />
+    <ProjectReference Include="..\Myx.Message.EntityFrameworkCore\Myx.Message.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>
